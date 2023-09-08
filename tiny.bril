@@ -1,0 +1,13 @@
+@main {
+  v: int = const 5;
+  w: int = const 4;
+  w: int = const 5;
+  u: int = add w v;
+  x: int = add v w;
+  b: bool = const false;
+  print x;
+  .l:
+    jmp .m;
+  .m:
+    nop;
+}

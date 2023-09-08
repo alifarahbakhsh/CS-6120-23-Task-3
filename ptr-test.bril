@@ -1,0 +1,13 @@
+@main(vectorA: ptr<int>, vectorB: ptr<int>, size: int): int {
+  one: int = const 1;
+  index: int = const 0;
+  answer: int = const 0;
+.loop:
+  ptrA: ptr<int> = ptradd vectorA index;
+  ptrB: ptr<int> = ptradd vectorB index;
+  valA: int = load ptrA;  
+  valB: int = load ptrB;
+  tmp: int = mul valA valB;
+  answer: int = add answer tmp;
+  ret answer;
+}

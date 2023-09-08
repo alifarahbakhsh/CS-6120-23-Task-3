@@ -1,0 +1,8 @@
+@main(len: int): bool {
+ is_palindrome: bool = const false;
+ zero: int = const 0;
+ two: int = const 2;
+ ten: int = const 10;
+ check: bool = le len zero;
+ print check;
+}
